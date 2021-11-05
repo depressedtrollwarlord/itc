@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </div>
+    <style>
+
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+h1{
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+h2{
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}  
+
+#homeIntro{
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+
+label{
+  font-family: "Fira Code", sans-serif;
+  font-weight: 500;
+}
+
+footer{
+  font-family: Arial, Helvetica, sans-serif;
+  color:black;
+  font-weight: bold; 
+  position:fixed;
+  bottom:0;
+  width:100%;
+  height:20px;
+  text-align: left;
+}
+button{
+  background-color: rgb(255, 80, 80);
+  border-radius: 12px;
+  border: none;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#reset{
+  background-color: rgb(245, 102, 102);
+}
+#removeList{
+    background-color: rgb(245, 102, 102);
+}
+
+#homePage{
+  color: #ffe600;  
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+a:link {color: rgb(255, 81, 81);}      /* unvisited link */
+a:visited {color: black;}   /* visited link */
+a:hover {color: black;}     /* mouse over link */
+a:active {color: black;}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    filter: drop-shadow(10px 10px 10px #292d38);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgb(214, 155, 44);
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  
+        div[data-page="1"] h2, div[data-page="1"] p{
+            margin-bottom: 20px;
+        }
+        div[data-page="2"] *{
+            margin-bottom: 20px;
+        }
+        div[data-page="2"] .form *{
+            margin-bottom: 20px;
+        }
+        div[data-page="2"] .form {
+            display: grid;
+            grid-template-columns: 40% 20%;
+            gap: 20px 0px;
+
+        }
+
+        div.table table {
+            border-collapse: collapse;
+        }
+        div.table table * {
+            border: 1px solid #000;
+            padding: 30px 30px;
+        }
+        .table{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+    </style>
+</head>
+<body>
+    
+    <main>
+        <div class="page" data-page="2">
+            <h2>Simple Payroll</h2>
+
+            <div class="form">
+                <label>Employee Name:</label>
+                <input type="text" id="employeeName">
+    
+                <label>Days Worked:</label>
+                <input type="number" id="days">
+    
+                <label>Daily Rate:</label>
+                <input type="number" id="dailyRate">
+    
+                <label>Deduction Amount:</label>
+                <input type="number" id="deduction"> 
+            </div>
+            <button type="button" id="addList">Add to list</button> 
+
+            <div class="form">
+                <label>Delete Line:</label>
+                <input type="number" id="workerDel">
+            </div>
+            <button type="button" id="removeList">Remove from list</button>
+
+            <div class="table"></div>
+        </div>
+    </main>
+    <script src="payroll.js"></script>
+    <footerstyle="font-family:courier; text-align:center; color:rgb(255, 255, 255);"> ᓚᘏᗢ ♡ by Kathrina Cordova </footer>
+</body>
+</html>
